@@ -1,0 +1,300 @@
+{% load static%}
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <title></title>
+    <link rel="stylesheet" type="text/css" href="{% static 'bootstrap.css'%}" />
+
+    <!-- dropdown -->
+    <script src="//code.jquery.com/jquery.min.js"></script>
+    <link
+      href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/css/bootstrap-combined.min.css"
+      rel="stylesheet"
+      type="text/css"
+    />
+    <script src="//netdna.bootstrapcdn.com/twitter-bootstrap/2.3.2/js/bootstrap.min.js"></script>
+  </head>
+  <body>
+    <nav
+      class="navbar navbar-default navbar-static-top"
+      style="background-color: lightgray;"
+    >
+      <div class="container">
+        <h4 style="color: white;">
+          Pemodelan Topik untuk Penelitian di Bidang Informatika
+        </h4>
+      </div>
+    </nav>
+
+    <div class="jumbotron" style="background-color: #ebf2ed;">
+      <!-- #fff045 -->
+      <div class="container text-center">
+        <h2>Tren Penelitian di Bidang Informatika Tahun 2013</h2>
+        <p>Berdasarkan Indeks Google Scholar Indonesia</p>
+      </div>
+    </div>
+
+    <div class="container">
+      <h4>
+        Penelitian berdasarkan tahun
+      </h4>
+
+      <!-- Single button -->
+      <div class="btn-group">
+        <button
+          type="button"
+          class="btn btn-default dropdown-toggle"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Pilih tahun <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="/">Tahun 2019</a></li>
+          <li><a href="/tahun2018">Tahun 2018</a></li>
+          <li><a href="/tahun2017">Tahun 2017</a></li>
+          <li><a href="/tahun2016">Tahun 2016</a></li>
+          <li><a href="/tahun2015">Tahun 2015</a></li>
+          <li><a href="/tahun2014">Tahun 2014</a></li>
+          <li><a href="/tahun2013">Tahun 2013</a></li>
+          <li><a href="/tahun2012">Tahun 2012</a></li>
+          <li><a href="/tahun2011">Tahun 2011</a></li>
+          <li><a href="/tahun2010">Tahun 2010</a></li>
+          <!-- <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li> -->
+        </ul>
+      </div>
+
+      <div class="btn-group">
+        <button
+          type="button"
+          class="btn btn-default dropdown-toggle"
+          data-toggle="dropdown"
+          aria-haspopup="true"
+          aria-expanded="false"
+        >
+          Rentang tahun <span class="caret"></span>
+        </button>
+        <ul class="dropdown-menu">
+          <li><a href="/range-2">2 tahun terakhir</a></li>
+          <li><a href="/range-3">3 tahun terakhir</a></li>
+          <li><a href="/range-4">4 tahun terakhir</a></li>
+          <li><a href="/range-5">5 tahun terakhir</a></li>
+          <li><a href="/range-6">6 tahun terakhir</a></li>
+          <li><a href="/range-7">7 tahun terakhir</a></li>
+          <li><a href="/range-8">8 tahun terakhir</a></li>
+          <li><a href="/range-9">9 tahun terakhir</a></li>
+          <li><a href="/range-10">10 tahun terakhir</a></li>
+          <!-- <li role="separator" class="divider"></li>
+            <li><a href="#">Separated link</a></li> -->
+        </ul>
+      </div>
+    </div>
+
+    <div class="container text-center">
+      <h3>3 Topik dengan Frekuensi Tertinggi</h3>
+      <br />
+      <div class="row">
+        <div class="col-sm-4">
+          <img
+            src="{% static "img/2013/wcld-topic-7.png" %}"
+            class="img-responsive"
+            style="width:100%"
+            alt="Image"
+          />
+          <p>Banyak Dokumen: 890</p>
+        </div>
+        <div class="col-sm-4">
+          <img
+            src="{% static "img/2013/wcld-topic-9.png" %}"
+            class="img-responsive"
+            style="width:100%"
+            alt="Image"
+          />
+          <p>Banyak Dokumen: 727</p>
+        </div>
+        <div class="col-sm-4">
+          <img
+            src="{% static "img/2013/wcld-topic-4.png" %}"
+            class="img-responsive"
+            style="width:100%"
+            alt="Image"
+          />
+          <p>Banyak Dokumen: 608</p>
+        </div>
+      </div>
+    </div>
+    <br />
+
+    <div class="container text-center">
+      <h4>Topik Lainnya</h4>
+      <br />
+      <div class="row">
+        <div class="col-sm-4">
+          <img
+            src="{% static "img/2013/wcld-topic-2.png" %}"
+            class="img-responsive"
+            style="width:100%"
+            alt="Image"
+          />
+          <p>Banyak Dokumen: 567</p>
+        </div>
+        <div class="col-sm-4">
+          <img
+            src="{% static "img/2013/wcld-topic-13.png" %}"
+            class="img-responsive"
+            style="width:100%"
+            alt="Image"
+          />
+          <p>Banyak Dokumen: 500</p>
+        </div>
+        <div class="col-sm-4">
+          <img
+            src="{% static "img/2013/wcld-topic-8.png" %}"
+            class="img-responsive"
+            style="width:100%"
+            alt="Image"
+          />
+          <p>Banyak Dokumen: 480</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <img
+            src="{% static "img/2013/wcld-topic-0.png" %}"
+            class="img-responsive"
+            style="width:100%"
+            alt="Image"
+          />
+          <p>Banyak Dokumen: 438</p>
+        </div>
+        <div class="col-sm-4">
+          <img
+            src="{% static "img/2013/wcld-topic-5.png" %}"
+            class="img-responsive"
+            style="width:100%"
+            alt="Image"
+          />
+          <p>Banyak Dokumen: 437</p>
+        </div>
+        <div class="col-sm-4">
+          <img
+            src="{% static "img/2013/wcld-topic-1.png" %}"
+            class="img-responsive"
+            style="width:100%"
+            alt="Image"
+          />
+          <p>Banyak Dokumen: 433</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <img
+            src="{% static "img/2013/wcld-topic-10.png" %}"
+            class="img-responsive"
+            style="width:100%"
+            alt="Image"
+          />
+          <p>Banyak Dokumen: 427</p>
+        </div>
+        <div class="col-sm-4">
+          <img
+            src="{% static "img/2013/wcld-topic-3.png" %}"
+            class="img-responsive"
+            style="width:100%"
+            alt="Image"
+          />
+          <p>Banyak Dokumen: 415</p>
+        </div>
+        <div class="col-sm-4">
+          <img
+            src="{% static "img/2013/wcld-topic-14.png" %}"
+            class="img-responsive"
+            style="width:100%"
+            alt="Image"
+          />
+          <p>Banyak Dokumen: 387</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <img
+            src="{% static "img/2013/wcld-topic-11.png" %}"
+            class="img-responsive"
+            style="width:100%"
+            alt="Image"
+          />
+          <p>Banyak Dokumen: 361</p>
+        </div>
+        <div class="col-sm-4">
+          <img
+            src="{% static "img/2013/wcld-topic-15.png" %}"
+            class="img-responsive"
+            style="width:100%"
+            alt="Image"
+          />
+          <p>Banyak Dokumen: 357</p>
+        </div>
+        <div class="col-sm-4">
+          <img
+            src="{% static "img/2013/wcld-topic-6.png" %}"
+            class="img-responsive"
+            style="width:100%"
+            alt="Image"
+          />
+          <p>Banyak Dokumen: 346</p>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-4">
+          <!-- <img
+            src="{% static "img/2013/wcld-topic-10.png" %}"
+            class="img-responsive"
+            style="width:100%"
+            alt="Image"
+          />
+          <p>Banyak Dokumen: 427</p> -->
+        </div>
+        <div class="col-sm-4">
+          <img
+            src="{% static "img/2013/wcld-topic-12.png" %}"
+            class="img-responsive"
+            style="width:100%"
+            alt="Image"
+          />
+          <p>Banyak Dokumen: 338</p>
+        </div>
+        <!-- <div class="col-sm-4">
+          <img
+            src="{% static "img/2013/wcld-topic-14.png" %}"
+            class="img-responsive"
+            style="width:100%"
+            alt="Image"
+          />
+          <p>Banyak Dokumen: 387</p>
+        </div> -->
+      </div>
+    </div>
+    <br />
+
+    <!-- button pyldavis -->
+    <footer
+      class="container-fluid text-center"
+      style="background-color: lightgrey; margin: 30px;"
+    >
+      <h4 style="margin:20px">
+        Pelajari topik dan persebaran kata lebih lanjut
+      </h4>
+      <a
+        href="/pyldavis2013"
+        class="btn btn-info"
+        role="button"
+        style="margin-bottom: 20px;"
+        >Lihat di sini</a
+      >
+      <!-- <button a href="/pyldavis2011" type="button" class="btn btn-info" style="margin-bottom: 20px;">Lihat pyLDAvis</button> -->
+    </footer>
+  </body>
+</html>
